@@ -5,13 +5,8 @@ interface RepositoryState {
   loading: boolean;
   error: string | null;
   data: string[];
-}
+} 
 
-/*interface Action {
-  type: string;
-  payload?:any; 
-}*/
- 
 const reducer = (state: RepositoryState, 
   action: Action ): RepositoryState => {
   switch (action.type){
